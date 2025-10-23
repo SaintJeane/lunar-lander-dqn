@@ -67,6 +67,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Free up disk space
+      run: |
+        sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc
+        docker system prune -af
+
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
 
@@ -86,7 +91,7 @@ jobs:
     
     - name: Build Docker image
       run: |
-        docker-compose build
+        docker-compose build --no-cache
     
     - name: Test Docker container
       run: |
