@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  dqn-training:
+    build: .
+    container_name: lunar-lander-dqn
+    volumes:
+      - ./models:/app/models
+      - ./plots:/app/plots
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python train.py
+    
+  dqn-evaluation:
+    build: .
+    container_name: lunar-lander-eval
+    volumes:
+      - ./models:/app/models
+      - ./videos:/app/videos
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python evaluate.py --model ./models/best_model.pth --episodes 100
+    profiles:
+      - evaluation
