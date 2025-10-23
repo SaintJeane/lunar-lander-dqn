@@ -6,7 +6,7 @@ Get up and running with DQN LunarLander in 5 minutes!
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/lunar-lander-dqn.git
+git clone https://github.com/SaintJeane/lunar-lander-dqn.git
 cd lunar-lander-dqn
 ./setup.sh
 
@@ -30,7 +30,7 @@ python evaluate.py --model models/best_model.pth --test --render
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/yourusername/lunar-lander-dqn.git
+git clone https://github.com/SaintJeane/lunar-lander-dqn.git
 cd lunar-lander-dqn
 
 # 2. Run setup script
@@ -298,9 +298,7 @@ A: It will work on CPU, just slower. Consider using Google Colab for free GPU.
 ## 🆘 Getting Help
 
 - **Documentation**: Check README.md, ARCHITECTURE.md, CONTRIBUTING.md
-- **Issues**: Search [existing issues](https://github.com/yourusername/lunar-lander-dqn/issues)
-- **Discord/Slack**: Join our community (link in README)
-- **Email**: Contact maintainers
+- **Email**: Contact [maintainer](saintpetre99@gmail.com)
 
 ## 📝 Quick Reference
 

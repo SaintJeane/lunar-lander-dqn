@@ -104,7 +104,7 @@ Input (8) → Dense(128) → ReLU → Dense(128) → ReLU → Output(4)
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/lunar-lander-dqn.git
+git clone https://github.com/saintjeane/lunar-lander-dqn.git
 cd lunar-lander-dqn
 
 # Create virtual environment
@@ -122,7 +122,7 @@ pip install -r requirements.txt
 docker-compose build
 
 # Or use pre-built image (if available)
-docker pull yourusername/lunar-lander-dqn:latest
+docker pull sainte/lunar-lander-dqn:latest
 ```
 
 ## 🚀 Usage
@@ -382,9 +382,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [@SaintJeane](https://github.com/SaintJeane)
+- LinkedIn: [Peter Jaimbo](https://linkedin.com/in/peterjaimbo)
 
 ## 🙏 Acknowledgments
 

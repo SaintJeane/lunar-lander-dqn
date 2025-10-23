@@ -52,6 +52,12 @@ jobs:
     - name: Run tests
       run: |
         pytest test_dqn.py -v --cov=. --cov-report=xml --cov-report=term
+
+    - name: Install Docker Compose
+      run: |
+        sudo curl -L "https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        docker-compose --version
     
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
@@ -59,7 +65,7 @@ jobs:
         file: ./coverage.xml
         flags: unittests
         name: codecov-umbrella
-        fail_ci_if_error: false
+        fail_ci_if_error: false 
 
   docker-build:
     runs-on: ubuntu-latest
