@@ -104,7 +104,7 @@ Input (8) → Dense(128) → ReLU → Dense(128) → ReLU → Output(4)
 
 ```bash
 # Clone the repository
-git clone https://github.com/saintjeane/lunar-lander-dqn.git
+git clone https://github.com/SaintJeane/lunar-lander-dqn.git
 cd lunar-lander-dqn
 
 # Create virtual environment
